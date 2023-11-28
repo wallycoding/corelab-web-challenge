@@ -59,7 +59,11 @@ export const NotesArea = ({
   return (
     <CategoryLayout name={name}>
       {content}
-      {isEmpty && <p>Nenhuma nota encontrada!</p>}
+      {isEmpty && (
+        <p data-testid="empty-notes" className="font-medium">
+          Nenhuma nota encontrada!
+        </p>
+      )}
     </CategoryLayout>
   );
 };
