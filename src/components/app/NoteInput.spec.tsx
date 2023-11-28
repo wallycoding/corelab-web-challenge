@@ -77,7 +77,6 @@ describe('NoteInput', () => {
         onUpdate={mockProps.onUpdate}
       />,
     );
-    jest.resetAllMocks();
   });
 
   afterEach(() => {
